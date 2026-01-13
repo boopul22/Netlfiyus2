@@ -10,6 +10,14 @@ export default function Document() {
                 />
             </Head>
             <body>
+                {/* Hidden form for Netlify build-time detection */}
+                <form name="claim-form" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+                    <input type="text" name="name" />
+                    <input type="tel" name="phone" />
+                    <input type="email" name="email" />
+                    <textarea name="details"></textarea>
+                    <input type="checkbox" name="terms" />
+                </form>
                 <Main />
                 <NextScript />
             </body>
