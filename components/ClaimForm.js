@@ -10,12 +10,16 @@ export default function ClaimForm() {
         const formData = new FormData(form)
 
         try {
-            await fetch('/__forms.html', {
+            const response = await fetch('/', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
                 body: new URLSearchParams(formData).toString(),
             })
-            setSubmitted(true)
+            if (response.ok) {
+                setSubmitted(true)
+            } else {
+                console.error('Form submission failed:', response.status)
+            }
         } catch (error) {
             console.error('Form submission error:', error)
         }
