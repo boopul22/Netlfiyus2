@@ -79,6 +79,7 @@ export default function ClaimForm() {
                             <form
                                 name={NETLIFY_FORM_NAME}
                                 method="POST"
+                                action="/"
                                 data-netlify="true"
                                 data-netlify-honeypot="bot-field"
                                 onSubmit={handleSubmit}
