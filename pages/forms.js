@@ -6,7 +6,7 @@ export default function FormsPage() {
         <form
             name="Usa1"
             method="POST"
-            action="/"
+            action="/forms.html"
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             hidden

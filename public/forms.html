@@ -1,10 +1,15 @@
+<!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+  <title>Form Detection</title>
+</head>
 
 <body>
-  <!-- Standardized Form (Usa1) -->
-  <form name="Usa1" method="POST" action="/" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+  <!-- This file exists solely for Netlify form detection during build -->
+  <!-- Hidden form for Usa1 - matches the React form field names -->
+  <form name="Usa1" method="POST" action="/forms.html" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="Usa1" />
     <input name="bot-field" type="text" />
     <input name="name" type="text" />
     <input name="phone" type="tel" />
