@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Phone, Mail, MapPin, Clock, Shield, Zap, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
+import { NETLIFY_FORM_NAME } from '../constants/forms'
 
 export default function Contact() {
     const [submitted, setSubmitted] = useState(false)
@@ -149,14 +150,14 @@ export default function Contact() {
                                             </div>
 
                                             <form
-                                                name="contact-form"
+                                                name={NETLIFY_FORM_NAME}
                                                 method="POST"
                                                 data-netlify="true"
                                                 data-netlify-honeypot="bot-field"
                                                 onSubmit={handleSubmit}
                                                 className="space-y-5 sm:space-y-6"
                                             >
-                                                <input type="hidden" name="form-name" value="contact-form" />
+                                                <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
                                                 <p className="hidden">
                                                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                                                 </p>

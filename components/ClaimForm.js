@@ -1,5 +1,6 @@
 import { Shield, Zap, CheckCircle } from 'lucide-react'
 import { useState } from 'react'
+import { NETLIFY_FORM_NAME } from '../constants/forms'
 
 export default function ClaimForm() {
     const [submitted, setSubmitted] = useState(false)
@@ -76,14 +77,14 @@ export default function ClaimForm() {
                             </div>
                         ) : (
                             <form
-                                name="claim-form"
+                                name={NETLIFY_FORM_NAME}
                                 method="POST"
                                 data-netlify="true"
                                 data-netlify-honeypot="bot-field"
                                 onSubmit={handleSubmit}
                                 className="space-y-4 sm:space-y-5"
                             >
-                                <input type="hidden" name="form-name" value="claim-form" />
+                                <input type="hidden" name="form-name" value={NETLIFY_FORM_NAME} />
                                 <p className="hidden">
                                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                                 </p>
