@@ -12,7 +12,7 @@ export default function Stats() {
                             <BadgeCheck size={28} />
                         </div>
                         <div>
-                            <h3 className="text-white font-semibold text-xl tracking-tight">98% Success Rate</h3>
+                            <h3 className="text-white font-bold text-2xl tracking-tight">100% Success Rate</h3>
                             <p className="text-slate-400 text-sm">For qualifying accident claims</p>
                         </div>
                     </div>
@@ -33,10 +33,10 @@ export default function Stats() {
 
                     <div className="flex items-center gap-4">
                         <div className="text-right hidden lg:block">
-                            <p className="text-slate-400 text-xs uppercase tracking-wider font-medium">Help Desk 24/7</p>
-                            <p className="text-white font-semibold text-lg">888.408.0938</p>
+                            <p className="text-slate-400 text-xs uppercase tracking-wider font-semibold">Help Desk 24/7</p>
+                            <p className="text-white font-bold text-xl">888 408 0938</p>
                         </div>
-                        <Link href="#claim" className="bg-[#3182ce] hover:bg-blue-600 text-white px-6 py-3 rounded-lg text-sm font-medium transition-colors shadow-lg shadow-blue-900/50 whitespace-nowrap">
+                        <Link href="/contact" className="bg-[#3182ce] hover:bg-blue-600 text-white px-8 py-4 rounded-xl text-base font-bold transition-all shadow-lg shadow-blue-900/50 whitespace-nowrap">
                             Get Started
                         </Link>
                     </div>

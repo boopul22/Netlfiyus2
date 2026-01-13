@@ -9,7 +9,7 @@ export default function CallToAction() {
                 <p className="text-slate-400 text-lg mb-10">
                     Don't face the insurance companies alone. Let our experts handle the claim while you focus on getting better.
                 </p>
-                <Link href="#claim" className="inline-flex items-center gap-2 px-8 py-4 bg-[#3182ce] text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-[0_0_30px_-5px_rgba(49,130,206,0.4)]">
+                <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-[#3182ce] text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-[0_0_30px_-5px_rgba(49,130,206,0.4)]">
                     Get Free Claim Now
                     <ArrowRight size={20} />
                 </Link>
