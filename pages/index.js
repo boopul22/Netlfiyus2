@@ -1,23 +1,34 @@
 import Head from 'next/head'
-import Header from '@components/Header'
-import Footer from '@components/Footer'
+import Navbar from '../components/Navbar'
+import Hero from '../components/Hero'
+import Trust from '../components/Trust'
+import Stats from '../components/Stats'
+import HowItWorks from '../components/HowItWorks'
+import ClaimForm from '../components/ClaimForm'
+import Features from '../components/Features'
+import CallToAction from '../components/CallToAction'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Next.js Starter!</title>
+        <title>Auto File Claim - Professional Accident Assistance</title>
+        <meta name="description" content="Professional Accident Assistance. We handle the paperwork so you can focus on recovery." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar />
       <main>
-        <Header title="Welcome to my app!" />
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+        <Hero />
+        <Trust />
+        <Stats />
+        <HowItWorks />
+        <ClaimForm />
+        <Features />
+        <CallToAction />
       </main>
-
       <Footer />
-    </div>
+    </>
   )
 }
